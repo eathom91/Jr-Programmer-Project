@@ -25,7 +25,7 @@ public abstract class Building : MonoBehaviour,
 
     protected int m_CurrentAmount = 0;
 
-    //return 0 if everything fit in the inventory, otherwise return the left over amount
+    //return 0 if everything fits in the inventory, otherwise return the leftover amount
     public int AddItem(string resourceId, int amount)
     {
         //as we use the shortcut -1 = infinite amount, we need to actually set it to max value for computation following
