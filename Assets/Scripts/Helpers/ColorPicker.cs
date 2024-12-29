@@ -9,7 +9,10 @@ public class ColorPicker : MonoBehaviour
     public Button ColorButtonPrefab;
     
     public Color SelectedColor { get; private set; }
-    public System.Action<Color> onColorChanged;
+    // This is a delegate that notifies subscribers on 'Invoke'
+    // where subscription methods are called with signatures
+    // matching (Color) -> void.
+    public System.Action<Color> onColorChanged; 
 
     List<Button> m_ColorButtons = new List<Button>();
     
