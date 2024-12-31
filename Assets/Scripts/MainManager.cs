@@ -3,7 +3,7 @@ using System.IO;
 
 public class MainManager : MonoBehaviour
 {
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; } // allows public get, private set (protected from misuse!)
     public Color TeamColor;
 
     [System.Serializable]
